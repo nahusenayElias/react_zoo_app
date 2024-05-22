@@ -1,21 +1,29 @@
 import { useState } from 'react';
 // import './App.css';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Card from './routes/Card';
 import {animals, birds, insects, fishes} from './routes/animalsList'
 import Home from './routes/Home';
-import Root from './routes/Root'
+import Root from './routes/Root';
 import About from './routes/About';
 import ErrorPage from './routes/ErrorPage';
 import SinglePage from './routes/SinglePage';
 import CategoryPage from './components/CategoryPage';
 import {RouterProvider, createBrowserRouter} from "react-router-dom";
 
-//create broweser router and router provider, home, root, birds,animals, about, ErroraPage
+//create browser router and router provider, home, root, birds,animals, about, ErrorPage
 
 function App() {
 const [zoo, setZoo] = useState({animals, birds, insects, fishes});
+
+// const [searchTerm, setSearchTerm] = useState("");
+// const handleSearch = (category, e) => {
+//   const searchTerm = e.target.value.toLowerCase();
+//   setZoo((prevZoo) => ({
+//     ...prevZoo,
+//     [category]: prevZoo[category].filter((el) => 
+//     el.name.toLowerCase().includes(searchTerm)
+//     ),
+//   }))
+// }
 
 const removeHandler = (name, category) => {
   setZoo((prevZoo) => ({
@@ -48,11 +56,17 @@ const likesHandler = (name, category, action) => {
         addLikes={likesHandler} 
         removeLikes={likesHandler} 
         removeCard ={removeHandler} 
+        // searchTerm={searchTerm}
+        // handleSearch={handleSearch()}
         {...zoo} 
         />
         ),
         },
-        {path: '/about', element:<About />}
+        {path: '/about', element:<About />}, 
+        {
+          path:":category/:name",
+          element:<animalsList {...zoo} />
+        }
       ]
     }
   ]);

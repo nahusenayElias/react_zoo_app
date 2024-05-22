@@ -3,14 +3,19 @@ import { Link } from "react-router-dom";
 const Card = ({ name, likes, addLikes, removeCard, removeLikes }) => {
 
   return (
-    <div className="card col-3 g-3">
+    <div className="card col-3 g-3" >
+      <button type="button"
+      onClick={removeCard}
+      className="btn-close">
+
+      </button>
       <img
         src={`https://source.unsplash.com/400x400/?${name}`}
         className="card-img-top"
         alt="..."
       />
 
-      <div className="card-body">
+      <div className="card-body" >
         <h5 className="card-title">{name} </h5>
         <p className="card-text">
           Some quick example text to build on the card title and make up the
