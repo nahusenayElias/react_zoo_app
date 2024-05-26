@@ -36,6 +36,7 @@ Live page [here](https://github.com/margittennosaar/markdown_study_materials)
 
 ## Screenshot
 
+
 ## Sources 
 
 - [GitHub Guides - masterin markdown](https://guides.github.com/features/mastering-markdown/)

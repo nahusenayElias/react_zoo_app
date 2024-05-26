@@ -25,25 +25,36 @@ const [zoo, setZoo] = useState({animals, birds, insects, fishes});
 //   }))
 // }
 
-const removeHandler = (name, category) => {
+//Removing cards...
+ const removeHandler = (name, category) => {
   setZoo((prevZoo) => ({
-    ...prevZoo,
+   ...prevZoo,
     [category] : prevZoo[category].filter(el =>el.name !== name), 
   })
-)}
-const likesHandler = (name, category, action) => {
+   )}
+
+//Increasing and decreasing likes.
+ const likesHandler = (name, category, action) => {
+  //  console.log('likes handler clicked');
  setZoo((prevZoo) => ({
   ...prevZoo, 
-  [category]:prevZoo[category].map((el) => el.name === name ? {...el, likes: el.likes + (action === 'add' ? 1: -1) }: el),
+  [category]: prevZoo[category].map((el) => 
+  el.name === name 
+  ? {...el, likes: el.likes + (action === "add" ? 1: -1) }: el
+  ),
+
 
  }));
-};
+ };
+// const likesHandler = (name, category) => {
+//   console.log('likes handler clicked');
+//   setLikes(likes + 1);
+
+
+// }
 
   const router = createBrowserRouter([
-    // children: [
-    //   path: ':category',###
-    //   element
-    // ]
+   
     {path: '/', element: <Home />},
     {
       path: '/',
@@ -56,17 +67,22 @@ const likesHandler = (name, category, action) => {
         addLikes={likesHandler} 
         removeLikes={likesHandler} 
         removeCard ={removeHandler} 
-        // searchTerm={searchTerm}
-        // handleSearch={handleSearch()}
         {...zoo} 
         />
         ),
+        // searchTerm={searchTerm}
+        // handleSearch={handleSearch()}
         },
-        {path: '/about', element:<About />}, 
+         {path: '/about', element:<About/>},
         {
           path:":category/:name",
           element:<animalsList {...zoo} />
-        }
+        },
+        {
+          path: "/:category/:name", 
+          element: <SinglePage {...zoo} />
+        },
+
       ]
     }
   ]);

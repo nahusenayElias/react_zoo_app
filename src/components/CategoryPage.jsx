@@ -29,7 +29,7 @@ const CategoryPage = ({ removeCard, removeLikes, addLikes, searchTerm, handleSea
         .map((item) => {
           return (
             <Card
-            key={item.name}
+            likes={item.likes}
             name={item.name}
               removeCard={() => removeCard(item.name, category)}
               removeLikes={() => removeLikes(item.name, category, "remove")}

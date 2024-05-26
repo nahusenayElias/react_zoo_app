@@ -3,10 +3,10 @@ import { Link } from "react-router-dom";
 const Card = ({ name, likes, addLikes, removeCard, removeLikes }) => {
 
   return (
-    <div className="card col-3 g-3" >
+    <div className="card col-3 g-3">
       <button type="button"
       onClick={removeCard}
-      className="btn-close">
+      className="btn-close btn-close">
 
       </button>
       <img
@@ -29,9 +29,7 @@ const Card = ({ name, likes, addLikes, removeCard, removeLikes }) => {
         <button className="btn">
           <p className="d-inline">{likes}</p>
 
-          <span className={`material-symbols-outlined minus-btn ${likes >= 0 ? "d-none" : ""}`}>
-            heart_broken
-            </span>
+          <span className={`material-symbols-outlined heart_broken d-inline ${likes >= 0 ? "d-none" : ""}`}>heart_broken</span>
           </button>
           <button className="btn" onClick={addLikes}>
           
