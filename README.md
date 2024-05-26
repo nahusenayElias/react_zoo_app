@@ -8,8 +8,16 @@ Currently, two official plugins are available:
 - [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh -->
 # Project title
 
-A short description of this project. 
-What it is about, who are target group and why that project was made. 
+```
+React Zoo App Project
+
+```
+
+### Description ###
+
+- The project used animals, birds, insects and fishes and it demonstrated key react features such as *state and props*, *hooks*, *routing with react router*.
+
+- 
 
 ## Technologies used
 
