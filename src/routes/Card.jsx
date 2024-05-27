@@ -29,7 +29,7 @@ const Card = ({ name, likes, addLikes, removeCard, removeLikes }) => {
         <button className="btn">
           <p className="d-inline">{likes}</p>
 
-          <span className={`material-symbols-outlined heart_broken d-inline ${likes >= 0 ? "d-none" : ""}`}>heart_broken</span>
+          <span className={`material-symbols-outlined heart_broken d-inline ${likes >= 0 ? "d-none" : ""}`} role="img" aria-label="sad">😢</span>
           </button>
           <button className="btn" onClick={addLikes}>
           

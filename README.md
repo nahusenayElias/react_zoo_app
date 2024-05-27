@@ -13,7 +13,7 @@ React Zoo App Project
 
 ```
 
-### Description ###
+### Description ##
 
 - The project used animals, birds, insects and fishes and it demonstrated key react features such as *state and props*, *hooks*, *routing with react router*.
 
@@ -36,6 +36,8 @@ Live page [here](https://github.com/margittennosaar/markdown_study_materials)
 
 ## Screenshot
 
+
+![Alt text](zoo_app_ss.png)
 
 ## Sources 
 
