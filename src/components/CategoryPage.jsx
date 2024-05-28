@@ -24,7 +24,7 @@ const CategoryPage = ({ removeCard, removeLikes, addLikes, searchTerm, handleSea
   return (
     <>
       <h2 className="cat-name">{category}</h2>
-      <div className="row ">
+      <div className="card-container row gap-4">
         {categoryItems.filter((el) => el.name.toLowerCase().includes(search.toLowerCase()))
         .map((item) => {
           return (
