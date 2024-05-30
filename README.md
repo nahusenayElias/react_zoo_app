@@ -39,6 +39,10 @@ Live page [here](https://github.com/margittennosaar/markdown_study_materials)
 
 ![Alt text](zoo_app_ss.png)
 
+
+
+
+
 ## Sources 
 
 - [GitHub Guides - masterin markdown](https://guides.github.com/features/mastering-markdown/)
