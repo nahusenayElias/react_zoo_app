@@ -34,10 +34,15 @@ Built with:
 
 Live page [here](https://github.com/margittennosaar/markdown_study_materials)
 
-## Screenshot
+## Screenshots
+
+### Animal card Home page ###
+
+![Alt text](zooapp.png)
 
 
-![Alt text](/react_zoo/Screenshot 2024-05-30 at 23.53.20.png)
+
+### Animal cards ###
 
 ![Alt text](zoo_app_ss.png)
 
@@ -56,3 +61,6 @@ Live page [here](https://github.com/margittennosaar/markdown_study_materials)
 Margit Tennosaar
 - GitHub @margittennosaar
 - [LinkedIn](https://www.linkedin.com/in/margittennosaar/)
+
+Elias Hagos
+- Github @nahusenayElias 
