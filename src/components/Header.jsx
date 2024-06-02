@@ -66,31 +66,5 @@ const Header = () => {
       </nav>
     </header>
   );
-};
-{/* <Link to="/">
-  <h1>Zoo App</h1>
-</Link>
-<nav>
-  <ul>
-    <li>
-      <NavLink to="/home">Home</NavLink>
-    </li>
-    <li>
-      <NavLink to="/animals">Animals</NavLink>
-    </li>
-    <li>
-      <NavLink to="/birds">Birds</NavLink>
-    </li>
-    <li>
-      <NavLink to="/insects">Insects</NavLink>
-    </li>
-    <li>
-      <NavLink to="/fishes">Fishes</NavLink>
-    </li>
-    <li>
-      <NavLink to="/">About</NavLink>
-    </li>
-  </ul>
-</nav> */}
-
+}; 
 export default Header;

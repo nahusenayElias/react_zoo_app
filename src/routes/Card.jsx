@@ -40,7 +40,6 @@ const Card = ({ name, likes, addLikes, removeCard, removeLikes }) => {
         </Link>
       </div>
     </div>
-    // </div>
   );
 };
 

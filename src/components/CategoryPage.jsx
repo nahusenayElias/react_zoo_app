@@ -17,8 +17,6 @@ const CategoryPage = ({ removeCard, removeLikes, addLikes, searchTerm, handleSea
     setSearch(event.target.value);
   };
 
-
-
   const categoryItems = rest[category];
 
   return (
@@ -42,32 +40,3 @@ const CategoryPage = ({ removeCard, removeLikes, addLikes, searchTerm, handleSea
   );
 };
 export default CategoryPage;
-
-// import {useParams} from 'react-router-dom';
-// import Card from './Card';
-
-// const CategoryPage = ({removeCard,removeLikes, addLikes, ...rest}) => {
-//     const { category }= useParams();
-
-//     const categoryItems = rest[category];
-//     return (
-//         <>
-//         <h2>{category}</h2>
-//         {categoryItems.map((item) => {
-//             return (
-
-//             <Card
-//             key= {item.name}
-//             name= {item.name}
-//             removeCard={()=> {removeCard(item.name, category,)}
-//             removeLikes={()=>{removeLikes(item.name, category, 'remove')}
-//             addLikes={()=>{addLikes(item.name, category, 'add')}
-//             />;
-//         );
-
-//         })}
-//         </>
-//      );
-// }
-
-// export default CategoryPage;

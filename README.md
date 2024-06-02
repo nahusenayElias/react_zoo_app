@@ -37,7 +37,10 @@ Live page [here](https://github.com/margittennosaar/markdown_study_materials)
 ## Screenshot
 
 
+![Alt text](/react_zoo/Screenshot 2024-05-30 at 23.53.20.png)
+
 ![Alt text](zoo_app_ss.png)
+
 
 
 
