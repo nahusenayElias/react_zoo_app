@@ -10,7 +10,7 @@ const Card = ({ name, likes, addLikes, removeCard, removeLikes }) => {
 
       </button>
       <img
-        src={`https://source.unspash.com/400x400?${name}`}
+        src={`https://source.unsplash.com/random/400x400?${name}`}
         className="card-img-top"
         alt="..."
       />
