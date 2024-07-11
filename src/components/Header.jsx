@@ -3,8 +3,8 @@ import { Link, NavLink } from "react-router-dom";
 const Header = () => {
   return (
     <header>
-      <nav className="navbar fixed-top navbar-expand-lg bg-body-tertiary">
-        <div className="container-fluid">
+      <nav className="navbar navbar-expand-lg bg-body-tertiary">
+        <div className="container-fluid mt-8">
           <Link className="navbar-brand" to="/">
             <h1>Zoo App</h1>
           </Link>

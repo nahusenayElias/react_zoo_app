@@ -23,7 +23,7 @@ const CategoryPage = ({ removeCard, removeLikes, addLikes,  ...rest }) => {
 
   return (
     
-      <div className="card-container row gap-4">
+      <div className="container mt-4">
       <h2>{category}</h2>
       <div>
       <input type="text" className="mb-2 mt-4"
