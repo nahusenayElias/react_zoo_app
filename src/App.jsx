@@ -27,8 +27,7 @@ const [zoo, setZoo] = useState({animals, birds, insects, fishes});
   ...prevZoo, 
   [category]: prevZoo[category].map((el) => 
   el.name === name 
-  ? {...el, likes: el.likes + (action === "add" ? 1: -1) }: el
-  ),
+  ? {...el, likes: el.likes + (action === "add" ? 1: -1) }: el),
 
  }));
  };
@@ -53,10 +52,9 @@ const [zoo, setZoo] = useState({animals, birds, insects, fishes});
         
         },
          {path: '/about', element:<About/>},
-        {
-          path:":category/:name",
-          element:<animalsList {...zoo} />
-        },
+        // {
+        //   path:":category/:name",element:<animalsList {...zoo} />
+        // },
         {
           path: "/:category/:name", 
           element: <SinglePage {...zoo} />

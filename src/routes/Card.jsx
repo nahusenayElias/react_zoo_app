@@ -15,7 +15,7 @@ const Card = ({ name, likes, addLikes,
         try {
           const response = await axios.get(`https://pixabay.com/api/?key=${API_KEY}&q=${name}`);
 
-          console.log(response);
+          //console.log(response);
 
           setImageUrl(response.data.hits[0]?.webformatURL || "");
           setLoading(false);
