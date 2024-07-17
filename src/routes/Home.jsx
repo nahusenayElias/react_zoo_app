@@ -1,5 +1,7 @@
 import { Link } from "react-router-dom";
 
+
+
 const Home = () => {
   return (
     <div className="container">
@@ -8,7 +10,7 @@ const Home = () => {
           <Link to="/animals" className="card mb-3">
             <img
               className="card-img-top"
-              src={`https://source.unsplash.com/600x600/?animals`}
+              src="/images/lion.jpeg"
               alt="Animals"
             />
             <div className="card-body">
@@ -21,7 +23,7 @@ const Home = () => {
           <Link to="/birds" className="card mb-3">
             <img
               className="card-img-top"
-              src={`https://source.unsplash.com/600x600/?birds`}
+              src= "/images/bird.jpeg"
               alt="Birds"
             />
             <div className="card-body">
@@ -34,7 +36,7 @@ const Home = () => {
           <Link to="/fishes" className="card mb-3">
             <img
               className="card-img-top"
-              src={`https://source.unsplash.com/600x600/?fishes`}
+              src="/images/fish.jpeg"
               alt="Fishes"
             />
             <div className="card-body">
@@ -47,7 +49,7 @@ const Home = () => {
           <Link to="/insects" className="card mb-3">
             <img
               className="card-img-top"
-              src={`https://source.unsplash.com/600x600/?insects`}
+              src="/images/insects.jpeg"
               alt="Insects"
             />
             <div className="card-body">
