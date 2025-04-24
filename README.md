@@ -32,7 +32,7 @@ Built with:
 
 ## Setup and usage
 
-Live page [here](https://deluxe-taffy-e54695.netlify.app/)
+Live page [here](https://eliashagos.netlify.app/)
 
 ## Screenshots
 
